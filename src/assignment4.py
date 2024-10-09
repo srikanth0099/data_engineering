@@ -8,8 +8,8 @@
 # research pack and upack of tuple
 
 # craete 2 sets a and b 
-# 4 operations union, intersection, difference ans symmetric difference
-# remove duplicates, add new eleemnt, remove an existing element
+# 4 operations union, intersection, difference and symmetric difference
+# l, remove duplicates, add new eleemnt, remove an existing element
 
 
 t = ( 4, 7, 3.14, 'sri', True, 'apple', False, 88, 'Hello', 7)
@@ -41,11 +41,12 @@ print("Intersection of elements: ", a & b)
 print("Difference of elements: ", a - b)
 print("Symmetric Difference of elements: ", a ^ b)
 
-print(a)
-print(b)
+l = ['Windows', 'Linux', 'Mac', 'Java', 'Mac', 'Angular', 'Java']
+s = set(l)
+print("Elements after removing duplication: ",s)
 
-a.add(10)
-print("Set after adding elements is: ", a)
+l.append('Solaris')
+print(l)
 
-a.remove(2)
-print("Set after removing elements is: ", a)
+l.pop(5)
+print(l)
