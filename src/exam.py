@@ -14,9 +14,7 @@ def separate_and_sum(nums):
     even_sum = sum(even_numbers)
     odd_sum = sum(odd_numbers)
 
-    if even_sum == odd_sum:
-        return even_sum, even_numbers
-    elif even_sum >= odd_sum:
+    if even_sum >= odd_sum:
         return even_sum, even_numbers
     else:
         return odd_sum, odd_numbers
